@@ -86,25 +86,15 @@ Given a list of **DPCI product codes** in an Excel file, this automation:
 - Microsoft Excel
 - Google Chrome
 
-### Input Files Required
-
-| File | Location | Description |
-|------|----------|-------------|
-| `DPCI Codes Test.xlsx` | `C:\Fardan\Target\` | Test DPCI list |
-| `DPCI Codes.xlsx` | `C:\Fardan\Target\` | Full DPCI list |
-| `Reviews_Target.xlsx` | `C:\Fardan\Target\` | Output file (must exist) |
-
-> ⚠️ Update file paths in the flow if your directory structure is different.
-
 ---
 
 ## 📸 Screenshots 
 
-### Main Flow
-![Main Flow](screenshots/01-main-flow.png)
+### Input Data
+![Main Flow](screenshots/input-data.jpeg)
 
 ### Main Flow
-![Main Flow](screenshots/input-data.png)
+![Main Flow](screenshots/01-main-flow.png)
 
 ### Product Search & Availability Check
 ![Subflow Search](screenshots/02-subflow-search.png)
@@ -113,7 +103,7 @@ Given a list of **DPCI product codes** in an Excel file, this automation:
 ![Data Extraction](screenshots/03-data-extraction.png)
 
 ### Date Filtering & Excel Write
-![Date Condition](screenshots/04-date-condition.png)
+![Date Condition](screenshots/04-date-condition.jpeg)
 
 ---
 
