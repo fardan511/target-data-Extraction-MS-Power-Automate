@@ -79,25 +79,6 @@ Given a list of **DPCI product codes** in an Excel file, this automation:
 
 ---
 
-## 📁 Project Structure
-
-```
-target-review-scraper/
-│
-├── README.md
-├── screenshots/
-│   ├── 01-main-flow.png         # Main flow steps 1–10
-│   ├── 02-subflow-search.png    # Search & condition logic
-│   ├── 03-data-extraction.png   # Review extraction steps
-│   └── 04-date-condition.png    # Date filtering & Excel write
-├── demo/
-│   └── demo-video.mp4           # Full automation walkthrough
-└── sample-data/
-    └── sample-output.xlsx       # Example output file
-```
-
----
-
 ## ⚙️ Setup & Requirements
 
 - Windows 10/11
@@ -117,10 +98,13 @@ target-review-scraper/
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots 
 
 ### Main Flow
 ![Main Flow](screenshots/01-main-flow.png)
+
+### Main Flow
+![Main Flow](screenshots/input-data.png)
 
 ### Product Search & Availability Check
 ![Subflow Search](screenshots/02-subflow-search.png)
