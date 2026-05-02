@@ -1,10 +1,10 @@
-#  Target.com Review Scraper — Power Automate Desktop
+# 🎯 Target.com Review Scraper — Power Automate Desktop
 
 An automated desktop flow built with **Microsoft Power Automate Desktop** that scrapes product reviews, ratings, and recommendation percentages from [Target.com](https://www.target.com/) using DPCI codes, and writes the structured data into an Excel report.
 
 ---
 
-##  What This Project Does
+## 📌 What This Project Does
 
 Given a list of **DPCI product codes** in an Excel file, this automation:
 
@@ -12,16 +12,24 @@ Given a list of **DPCI product codes** in an Excel file, this automation:
 2. Searches each product by its DPCI code
 3. Navigates to the reviews section
 4. Extracts:
-   -  Average product rating
-   -  Individual review text
-   -  Review date (relative & formatted)
-   -  Recommendation percentage
+   - ⭐ Average product rating
+   - 💬 Individual review text
+   - 📅 Review date (relative & formatted)
+   - 👍 Recommendation percentage
 5. Writes all extracted data into a structured Excel output file
 6. Handles unavailable/out-of-stock products gracefully (marks as `Item Not Available`)
 
 ---
 
-##  Flow Architecture
+## 🖥️ Demo
+
+> 📹 Watch the full automation in action:
+
+[![Demo Video](https://img.shields.io/badge/Watch-Demo%20Video-blue?style=for-the-badge&logo=youtube)](./demo/demo-video.mp4)
+
+---
+
+## 🔁 Flow Architecture
 
 ### Main Flow
 
@@ -49,7 +57,7 @@ Given a list of **DPCI product codes** in an Excel file, this automation:
 
 ---
 
-##  Sample Output
+## 📊 Sample Output
 
 | DPCI | Total Rating | Period | Extraction Date | Reviews | Total Reviews | Individual Ratings |
 |------|-------------|--------|----------------|---------|--------------|-------------------|
@@ -59,7 +67,7 @@ Given a list of **DPCI product codes** in an Excel file, this automation:
 
 ---
 
-##  Tools & Technologies
+## 🛠️ Tools & Technologies
 
 | Tool | Purpose |
 |------|---------|
@@ -71,7 +79,7 @@ Given a list of **DPCI product codes** in an Excel file, this automation:
 
 ---
 
-##  Project Structure
+## 📁 Project Structure
 
 ```
 target-review-scraper/
@@ -90,17 +98,42 @@ target-review-scraper/
 
 ---
 
-##  Setup & Requirements
+## ⚙️ Setup & Requirements
 
 - Windows 10/11
 - Microsoft Power Automate Desktop (free with Windows)
 - Microsoft Excel
 - Google Chrome
 
+### Input Files Required
+
+| File | Location | Description |
+|------|----------|-------------|
+| `DPCI Codes Test.xlsx` | `C:\Fardan\Target\` | Test DPCI list |
+| `DPCI Codes.xlsx` | `C:\Fardan\Target\` | Full DPCI list |
+| `Reviews_Target.xlsx` | `C:\Fardan\Target\` | Output file (must exist) |
+
+> ⚠️ Update file paths in the flow if your directory structure is different.
 
 ---
 
-##  Known Limitations
+## 📸 Screenshots
+
+### Main Flow
+![Main Flow](screenshots/01-main-flow.png)
+
+### Product Search & Availability Check
+![Subflow Search](screenshots/02-subflow-search.png)
+
+### Review Data Extraction
+![Data Extraction](screenshots/03-data-extraction.png)
+
+### Date Filtering & Excel Write
+![Date Condition](screenshots/04-date-condition.png)
+
+---
+
+## 🚧 Known Limitations
 
 - Target.com UI changes may break UI element selectors
 - Requires stable internet connection
